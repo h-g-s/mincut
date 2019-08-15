@@ -10,10 +10,25 @@
  *
  ********************************************************************************/
 
+/**
+ * @file main.c
+ * @author Haroldo Gambini Santos
+ * @date 15 Aug 2019
+ *
+ * Solver for the minimum cut problem
+ *
+ * Usage:
+ *    mincut graph source destination
+ *
+ * To solve the example included ex2.graph:
+ *     ./mincut examples/ex2.graph 1 8
+ * 
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-#include "macros.h"
 #include "mincut.h"
 
 #define ALLOCATE_VECTOR( ptr, type, nElements ) {\
